@@ -23,7 +23,7 @@ public class Menu {
             System.out.println("6) Conta de Agua;");
             System.out.println("7) Sair;");
             System.out.println();
-            System.out.print("Digite a opção escolhida: ");
+            System.out.print("Digite a opcao escolhida: ");
             choice = input.nextLine();
             System.out.println();
 
@@ -97,7 +97,7 @@ public class Menu {
                      tarifadistri;
 
                     Tarifa = 0.28738;
-                    tarifadistri = 0.30711;
+                    tarifadistri = 0.307111;
 
                     System.out.println("O valor da sua conta e R$: " + ((consumo * Tarifa) + (consumo * tarifadistri)));
 
