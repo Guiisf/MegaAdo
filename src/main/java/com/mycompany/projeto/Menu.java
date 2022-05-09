@@ -69,6 +69,7 @@ public class Menu {
                     }
                     break;
                 case "3":
+			System.out.println("Desconto de 10% no produto");
                      float valorUnitario;
         int unidade;
         float total;
@@ -85,6 +86,7 @@ public class Menu {
         // Print F , linguagem C. É necessário colocar o \n para obter a mesma funcionalidade do println
     
     }
+	break;
 
                 case "5":
                     int consumo;
@@ -100,6 +102,8 @@ public class Menu {
                     System.out.println("O valor da sua conta e R$: " + ((consumo * Tarifa) + (consumo * tarifadistri)));
 
                     break;
+		    case"7":
+			    System.exit(0);
             }
         } while (("1) Creditos".equals(choice))
                 && ("2) Viajem a Praia".equals(choice)) && ("3) Desconto".equals(choice)) && ("4) Imc".equals(choice)) && ("5) Conta de Luz".equals(choice))
