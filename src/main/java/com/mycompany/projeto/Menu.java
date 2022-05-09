@@ -87,6 +87,37 @@ public class Menu {
     
     }
 	break;
+                case "4":
+                            float  n1;
+        System.out.println("==============================================");
+        System.out.println("Calculo de consumo de Àgua em São Paulo por m³");
+        System.out.println("   o valor já esta calculando água e esgoto ");
+        System.out.println("==============================================");
+        System.out.println("Digite a Quantidade de m³ consumido(EX:6,0)");
+        n1 = sc.nextFloat();
+        if ( n1>0 && n1<10){
+            System.out.println("O consumo sera minimo no valor de 58,00 Reais");
+        //De 0 a 10 - Água R$ 29,00 / Esgoto R$29,00 (valor mínimo)
+        }else{
+           
+            if(n1>11 && n1<20){
+                System.out.println("valor é " + ((29+(10-5)*4.54))*2+" Reais");
+                //De 11 a 20 - Água R$ 4,54 por m3 / Esgoto R$ 4,54 por m3
+            }else{
+                if(n1>21 && n1<50){
+                    System.out.println("valor é " + ((29+10*4.54+(27-20)*11.33))*2+" Reais");
+                    //De 21 a 50 - Água R$ 11,33 por m3 / Esgoto R$ 11,33 por m3
+                }else{
+                    if (n1>51){
+                        System.out.println("valor é "+  (29+10*4.54+30*11.33+(55-50)*12.48)*2+" Reais");
+                        //Acima de 50 - Água R$ 12,48 por m3 / Esgoto R$ 12,48 por m3
+                    }else{
+                    }
+        System.out.println("==============================================");
+                }
+                break;
+
+        
 
                 case "5":
                     int consumo;
@@ -102,6 +133,35 @@ public class Menu {
                     System.out.println("O valor da sua conta e R$: " + ((consumo * Tarifa) + (consumo * tarifadistri)));
 
                     break;
+                    case"6":
+                    float n1;
+        System.out.println("==============================================");
+        System.out.println("Calculo de consumo de Ã€gua em SÃ£o Paulo por mÂ³");
+        System.out.println("   o valor jÃ¡ esta calculando Ã¡gua e esgoto ");
+        System.out.println("==============================================");
+        System.out.println("Digite a Quantidade de mÂ³ consumido(EX:6,0)");
+        n1 = sc.nextFloat();
+        if (n1 > 0 && n1 < 10) {
+            System.out.println("O consumo sera minimo no valor de 58,00 Reais");
+            //De 0 a 10 - Ã�gua R$ 29,00 / Esgoto R$29,00 (valor mÃ­nimo)
+        } else {
+
+            if (n1 >= 11 && n1 < 20) {
+                System.out.println("valor Ã© " + (29 + (10 - 5) * 4.54) * 2 + " Reais");
+                //De 11 a 20 - Ã�gua R$ 4,54 por m3 / Esgoto R$ 4,54 por m3
+            } else {
+                if (n1 >= 21 && n1 < 50) {
+                    System.out.println("valor Ã© " + ((29 + 10 * 4.54 + (27 - 20) * 11.33)) * 2 + " Reais");
+                    //De 21 a 50 - Ã�gua R$ 11,33 por m3 / Esgoto R$ 11,33 por m3
+                } else {
+                    if (n1 >= 51) {
+                        System.out.println("valor Ã© " + (29 + 10 * 4.54 + 30 * 11.33 + (55 - 50) * 12.48) * 2 + " Reais");
+                        //Acima de 50 - Ã�gua R$ 12,48 por m3 / Esgoto R$ 12,48 por m3
+                    } else {
+                        
+                    }
+                    break;
+                    
 		    case"7":
 			    System.exit(0);
             }
