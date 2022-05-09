@@ -68,6 +68,23 @@ public class Menu {
                         System.out.println("Não é uma boa ideia ir a praia :(");
                     }
                     break;
+                case "3":
+                     float valorUnitario;
+        int unidade;
+        float total;
+        System.out.println("Digite o valor da Unidade");
+        valorUnitario = input.nextFloat();
+        System.out.println("Digite a quantidade de Produtos");
+        unidade = input.nextInt();
+        total = (unidade * valorUnitario);
+        if (unidade < 10) {
+            System.out.printf("Valor a Pagar" + total + "\n");
+        } else { 
+            System.out.println(" Valor a Pagar "  +  (total - ( total * 0.10)));
+
+        // Print F , linguagem C. É necessário colocar o \n para obter a mesma funcionalidade do println
+    
+    }
 
                 case "5":
                     int consumo;
