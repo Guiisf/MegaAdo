@@ -105,6 +105,7 @@ public class Menu {
 		    case"7":
 			    System.exit(0);
             }
+            
         } while (("1) Creditos".equals(choice))
                 && ("2) Viajem a Praia".equals(choice)) && ("3) Desconto".equals(choice)) && ("4) Imc".equals(choice)) && ("5) Conta de Luz".equals(choice))
                 && ("6) Conta de Agua".equals(choice)) && ("1".equals(choice))
