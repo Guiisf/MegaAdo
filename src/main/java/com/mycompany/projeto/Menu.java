@@ -95,7 +95,7 @@ public class Menu {
                     System.out.println("===============================");
                     System.out.println("        Calcule seu IMC        ");
                     System.out.println("===============================");
-                    System.out.println("Digite o seu peso (EX:75,2kg):");
+                    System.out.println("Digite o seu peso (EX:75,2):");
                     peso = input.nextFloat();
                     System.out.println("Digite sua altura (EX:1,80m):");
                     altura = input.nextFloat();
@@ -163,6 +163,7 @@ public class Menu {
                     break;
 
                 case "7":
+			System.out.println("Voce saiu do jogo");
                     System.exit(0);
             }
 
