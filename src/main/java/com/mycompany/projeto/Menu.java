@@ -69,62 +69,51 @@ public class Menu {
                     }
                     break;
                 case "3":
-			System.out.println("Desconto de 10% no produto");
-                     float valorUnitario;
-        int unidade;
-        float total;
-        System.out.println("Digite o valor da Unidade");
-        valorUnitario = input.nextFloat();
-        System.out.println("Digite a quantidade de Produtos");
-        unidade = input.nextInt();
-        total = (unidade * valorUnitario);
-        if (unidade < 10) {
-            System.out.printf("Valor a Pagar" + total + "\n");
-        } else { 
-            System.out.println(" Valor a Pagar "  +  (total - ( total * 0.10)));
-
-        // Print F , linguagem C. É necessário colocar o \n para obter a mesma funcionalidade do println
-    
-    }
-	break;
-                case "4":
-                    
-        float n1;
-        System.out.println("==============================================");
-        System.out.println("Calculo de consumo de Àgua em São Paulo por m³");
-        System.out.println("   o valor já esta calculando água e esgoto ");
-        System.out.println("==============================================");
-        System.out.println("Digite a Quantidade de m³ consumido(EX:6,0)");
-        n1 = input.nextFloat();
-        if (n1 > 0 && n1 < 10) {
-            System.out.println("O consumo sera minimo no valor de 58,00 Reais");
-            //De 0 a 10 - Água R$ 29,00 / Esgoto R$29,00 (valor mínimo)
-        } else {
-
-            if (n1 >= 11 && n1 < 20) {
-                System.out.println("valor é " + (29 + (10 - 5) * 4.54) * 2 + " Reais");
-                //De 11 a 20 - Água R$ 4,54 por m3 / Esgoto R$ 4,54 por m3
-            } else {
-                if (n1 >= 21 && n1 < 50) {
-                    System.out.println("valor é " + ((29 + 10 * 4.54 + (27 - 20) * 11.33)) * 2 + " Reais");
-                    //De 21 a 50 - Água R$ 11,33 por m3 / Esgoto R$ 11,33 por m3
-                } else {
-                    if (n1 >= 51) {
-                        System.out.println("valor é " + (29 + 10 * 4.54 + 30 * 11.33 + (55 - 50) * 12.48) * 2 + " Reais");
-                        //Acima de 50 - Água R$ 12,48 por m3 / Esgoto R$ 12,48 por m3
+                    System.out.println("Desconto de 10% no produto");
+                    float valorUnitario;
+                    int unidade;
+                    float total;
+                    System.out.println("Digite o valor da Unidade");
+                    valorUnitario = input.nextFloat();
+                    System.out.println("Digite a quantidade de Produtos");
+                    unidade = input.nextInt();
+                    total = (unidade * valorUnitario);
+                    if (unidade < 10) {
+                        System.out.printf("Valor a Pagar" + total + "\n");
                     } else {
-                        
+                        System.out.println(" Valor a Pagar " + (total - (total * 0.10)));
+
+                        // Print F , linguagem C. É necessário colocar o \n para obter a mesma funcionalidade do println
                     }
-                }
-            }
+                    break;
+                case "4":
 
-        }
-        System.out.println("==============================================");
-    
-
-
-                
-                     
+                    
+                    float peso,
+                     altura,
+                     IMC;
+                    System.out.println("===============================");
+                    System.out.println("        Calcule seu IMC        ");
+                    System.out.println("===============================");
+                    System.out.println("Digite o seu peso (EX:75,2):");
+                    peso = input.nextFloat();
+                    System.out.println("Digite sua altura (EX:1,80):");
+                    altura = input.nextFloat();
+                    IMC = peso / (altura * altura);
+                    if (IMC < 17) {
+                        System.out.println("Muito abaixo do peso");
+                    } else if (IMC >= 17 && IMC < 18.5) {
+                        System.out.println("Abaixo do peso");
+                    } else if (IMC >= 18.5 && IMC < 25) {
+                        System.out.println("Peso ideal");
+                    } else if (IMC >= 25 && IMC <= 30) {
+                        System.out.println("Sobre peso");
+                    } else if (IMC > 30 && IMC < 40) {
+                        System.out.println("Obesidade severa");
+                    } else if (IMC > 40) {
+                        System.out.println("Obesidade morbida");
+                    }
+                    break;
 
                 case "5":
                     int consumo;
@@ -141,48 +130,42 @@ public class Menu {
 
                     break;
                 case "6":
-                    float  n11;
-        System.out.println("==============================================");
-        System.out.println("Calculo de consumo de Àgua em São Paulo por m³");
-        System.out.println("   o valor já esta calculando água e esgoto ");
-        System.out.println("==============================================");
-        System.out.println("Digite a Quantidade de m³ consumido(EX:6,0)");
-        n11 = input.nextFloat();
-        if ( n11>0 && n11<10){
-            System.out.println("O consumo sera minimo no valor de 58,00 Reais");
-        //De 0 a 10 - Água R$ 29,00 / Esgoto R$29,00 (valor mínimo)
-        }else{
-           
-            if(n11>11 && n11<20){
-                System.out.println("valor é " + ((29+(10-5)*4.54))*2+" Reais");
-                //De 11 a 20 - Água R$ 4,54 por m3 / Esgoto R$ 4,54 por m3
-            }else{
-                if(n11>21 && n11<50){
-                    System.out.println("valor é " + ((29+10*4.54+(27-20)*11.33))*2+" Reais");
-                    //De 21 a 50 - Água R$ 11,33 por m3 / Esgoto R$ 11,33 por m3
-                }else{
-                    if (n11>51){
-                        System.out.println("valor é "+  (29+10*4.54+30*11.33+(55-50)*12.48)*2+" Reais");
-                        //Acima de 50 - Água R$ 12,48 por m3 / Esgoto R$ 12,48 por m3
-                    }else{
-                    }
-        System.out.println("==============================================");
-                }
-            }
-           
-        }
-        break;
-       
-       
-    
-   
+                    float n11;
+                    System.out.println("==============================================");
+                    System.out.println("Calculo de consumo de Àgua em São Paulo por m³");
+                    System.out.println("   o valor já esta calculando água e esgoto ");
+                    System.out.println("==============================================");
+                    System.out.println("Digite a Quantidade de m³ consumido(EX:6,0)");
+                    n11 = input.nextFloat();
+                    if (n11 > 0 && n11 < 10) {
+                        System.out.println("O consumo sera minimo no valor de 58,00 Reais");
+                        //De 0 a 10 - Água R$ 29,00 / Esgoto R$29,00 (valor mínimo)
+                    } else {
 
-        
-                    
-		    case"7":
-			    System.exit(0);
+                        if (n11 > 11 && n11 < 20) {
+                            System.out.println("valor é " + ((29 + (10 - 5) * 4.54)) * 2 + " Reais");
+                            //De 11 a 20 - Água R$ 4,54 por m3 / Esgoto R$ 4,54 por m3
+                        } else {
+                            if (n11 > 21 && n11 < 50) {
+                                System.out.println("valor é " + ((29 + 10 * 4.54 + (27 - 20) * 11.33)) * 2 + " Reais");
+                                //De 21 a 50 - Água R$ 11,33 por m3 / Esgoto R$ 11,33 por m3
+                            } else {
+                                if (n11 > 51) {
+                                    System.out.println("valor é " + (29 + 10 * 4.54 + 30 * 11.33 + (55 - 50) * 12.48) * 2 + " Reais");
+                                    //Acima de 50 - Água R$ 12,48 por m3 / Esgoto R$ 12,48 por m3
+                                } else {
+                                }
+                                System.out.println("==============================================");
+                            }
+                        }
+
+                    }
+                    break;
+
+                case "7":
+                    System.exit(0);
             }
-            
+
         } while (("1) Creditos".equals(choice))
                 && ("2) Viajem a Praia".equals(choice)) && ("3) Desconto".equals(choice)) && ("4) Imc".equals(choice)) && ("5) Conta de Luz".equals(choice))
                 && ("6) Conta de Agua".equals(choice)) && ("1".equals(choice))
